@@ -21,7 +21,7 @@
 
     <ul class="nav justify-content-end p-3" style="background-color: #54d56c; border-bottom:solid 3px #2c6a37">
         <li class="nav-item">
-            <a class="btn btn-success m-1" style="border:solid #2c6a37 2px"  href="index.php">Usuarios</a>
+            <a class="btn btn-success m-1" style="border:solid #2c6a37 2px"  href="usuarios.php">Usuarios</a>
         <li class="nav-item">
             <a class="btn btn-success m-1" style="border:solid #2c6a37 2px" href="index.php">Inicio</a>
         <li class="nav-item">
