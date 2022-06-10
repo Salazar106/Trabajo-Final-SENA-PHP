@@ -23,17 +23,33 @@
                         <option value="2">2:00 PM</option>
                     </select>
                 </div>
+                <div class="mb-3 justify-content-end">
+                    <input type="submit" class="btn btn-success m-1" style="background-color:#54d56c; border:solid #2c6a37 2px;" value="Separa tu cupo">
+
+                </div>
+
             </div>
             <div class="card-footer">
-                <small class="text-muted">
-                    <label class="form-label">Cupos disponibles AM</label>
-                    <input type="text" value="100" readonly style="width: 35px; ;">
-                </small>
-                <hr>
-                <small class="text-muted">
-                    <label class="form-label">Cupos disponibles PM</label>
-                    <input type="text" value="100" readonly style="width: 35px; ;">
-                </small>
+                <div class="container px-4">
+                    <div class="row gx-5">
+                        <div class="col">
+                            <div class="p-3 border bg-light">
+                                <small class="text-muted">
+                                    <label class="form-label">Cupos disponibles 8 AM</label>
+                                    <input type="text" value="100" readonly style="width: 35px; ;">
+                                </small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light">
+                                <small class="text-muted">
+                                    <label class="form-label">Cupos disponibles 2 PM</label>
+                                    <input type="text" value="100" readonly style="width: 35px; ;">
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -44,7 +60,7 @@
                 <h5 class="card-title">Descripcion del evento</h5>
                 <p class="card-text">Aprende todas las tecnicas de marketing con el mejor maestro Daniel Peña, no te pierdas esta gran oportunidad y registrate para que hagas realidad todos tus proyectos</p>
             </div>
-            
+
         </div>
     </div>
 </div>
