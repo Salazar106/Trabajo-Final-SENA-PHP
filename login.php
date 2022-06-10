@@ -20,9 +20,9 @@
                         </div>
                     </div> <br>                   
                     <div class="d-grid">
-                        <input type="submit" class="btn btn-dark" value="Iniciar Sesion">
+                        <input type="submit" class="btn btn-success m-1" style="background-color:#54d56c; border:solid #2c6a37 2px" value="Iniciar Sesion">
                     </div>
-                    
+
                 </form>
             </div>
         </div>

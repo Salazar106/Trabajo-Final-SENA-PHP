@@ -23,7 +23,7 @@
         <li class="nav-item">
             <a class="btn btn-success m-1" style="border:solid #2c6a37 2px"  href="index.php">Usuarios</a>
         <li class="nav-item">
-            <a class="btn btn-success m-1" style="border:solid #2c6a37 2px" href="Home.php">Inicio</a>
+            <a class="btn btn-success m-1" style="border:solid #2c6a37 2px" href="index.php">Inicio</a>
         <li class="nav-item">
             <a class="btn btn-success m-1" style="border:solid #2c6a37 2px"  href="login.php">Iniciar Sesion</a>
         </li>
