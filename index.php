@@ -1,5 +1,12 @@
 <?php include 'template/header.php' ?>
 
+<?php if (isset($_GET['message']) && $_GET['message'] == 'successLogin') { ?>
+                <div class="m-1 alert alert-primary alert-dismissible fade show" role="alert">
+                    Iniciaste sesion correctamente!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php } ?>
+
 
 <div class="row row-cols-1 row-cols-md-2 g-4 p-5 align-item-center" style="margin-bottom:100px">
     <div class="col">

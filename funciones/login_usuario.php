@@ -10,15 +10,15 @@ $_SESSION['email'] = $email;
 
 $conexion = mysqli_connect("localhost", "root", "", "crudsitofinal");
 
-$query = "SELECT * FROM usuarios WHERE email = '$email' AND password = '$password'";
+$query = "SELECT * FROM personas WHERE email = '$email' AND password = '$password'";
 $result = mysqli_query($conexion, $query);
 
 $rows = mysqli_num_rows($result);
 
 if ($rows > 0) {
-    header("Location: ../../index.php");
+    header("location: ../index.php?message=successLogin");
 } else {
-    header("Location: ../../login.php");
+    header("Location: ../login.php?message=errorLogin");
 }
 
 mysqli_close($conexion);

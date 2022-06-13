@@ -13,22 +13,33 @@
     <link href="styles/estilos.css" rel="stylesheet">
     <link href="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.css" rel="stylesheet" type="text/css">
     <script src="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.js" type="text/javascript"></script>
-    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/1794/premium/1794594.png?token=exp=1655134315~hmac=a42bf9c7ede53b31646d4a2edf629785">
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/780/premium/780575.png?token=exp=1655155307~hmac=7cf49a985dc54a7f8f6d049a1bde162e">
     <script src="https://kit.fontawesome.com/53a7b5c861.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <ul class="nav justify-content-end  p-3" style="background-color: #54d56c; border-bottom:solid 3px #2c6a37">
-        <li class="nav-item">
-            <a class="btn btn-success blur-in m-1" style="border:solid #2c6a37 2px" href="usuarios.php">Usuarios</a>
-        <li class="nav-item">
-            <a class="btn btn-success blur-in m-1" style="border:solid #2c6a37 2px" href="index.php">Inicio</a>
-        <li class="nav-item">
-            <a class="btn btn-success blur-in m-1" style="border:solid #2c6a37 2px" href="login.php">Iniciar Sesion</a>
-        </li>
-        </li>
-        <li class="nav-item">
-            <a class="btn btn-success blur-in m-1" style="border:solid #2c6a37 2px" href="#">Cerrar Sesion</a>
-        </li>
-    </ul>
+    <?php
+    session_start();
+
+    if (isset($_SESSION['email']) && $_GET['mensaje'] != 'errorLogin') {
+
+    ?>
+
+        <ul class="nav justify-content-end  p-3" style="background-color: #54d56c; border-bottom:solid 3px #2c6a37">
+            <h5 class="text-center m-3 ">Welcome <?php echo $_SESSION['email']; ?></h5>
+            <li class="nav-item">
+                <a class="btn btn-success blur-in m-1" style="border:solid #2c6a37 2px" href="usuarios.php">Usuarios</a>
+            <li class="nav-item">
+                <a class="btn btn-success blur-in m-1" style="border:solid #2c6a37 2px" href="index.php">Eventos</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-success blur-in m-1" style="border:solid #2c6a37 2px" href="funciones/cerrarsesion.php">Cerrar Sesion</a>
+            </li>
+        </ul>
+    <?php } else { ?>
+        <ul class="nav justify-content-end  p-3" style="background-color: #54d56c; border-bottom:solid 3px #2c6a37">
+            <li class="nav-item">
+                <a class="btn btn-success blur-in m-1" style="border:solid #2c6a37 2px" href="login.php">Iniciar Sesion</a>
+        </ul>
+    <?php } ?>
