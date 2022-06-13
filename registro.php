@@ -1,10 +1,14 @@
 <?php include 'template/header.php' ?>
-<div class="container mt-1 " style="margin-bottom:100px">
+<div class="container mt-1 jello-horizontal" style="margin-bottom:100px">
     <div class="row justify-content-center align-items-center  ">
         <div class="col-md-4 mt-4">
             <div class="card mb-3 ">
                 <div class="card-header ">
-                    <h3>Registrate Aqui</h3>
+                <div class="row">
+                    
+                    <h3 class="col-auto">Registrate Aqui </h3>
+                    <img class="col-auto" src="https://cdn-icons-png.flaticon.com/512/2037/2037507.png" alt="key" style="width: 60px; height:110%">
+                    </div>
                 </div>
                 <form action="registrar.php" class="p-4" method="POST">
                     <div class="mb-3">

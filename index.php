@@ -4,7 +4,7 @@
 <div class="row row-cols-1 row-cols-md-2 g-4 p-5 align-item-center" style="margin-bottom:100px">
     <div class="col">
         <div class="card h-100">
-            <img src="img/REGISTRATE2.png" class="card-img-top" alt="...">
+            <img src="img/REGISTRATE2.png" class="card-img-top shake-horizontal" alt="...">
             <div class="card-body">
                 <h2 class="card-title text-center">Formulario </h2>
                 <p class="card-text">Diligencia los datos para pedir tu cupo</p>
