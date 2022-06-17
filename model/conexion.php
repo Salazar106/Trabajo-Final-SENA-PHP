@@ -1,15 +1,17 @@
 <?php
-$password="";
-$usuario="root";
-$nombre_bd="crudsitofinal";
 
-try{
-    $bd=new PDO(
+$password = "";
+$username = "root";
+$database = "citas";
+
+try {
+    $bd = new PDO(
         'mysql:host=localhost;
-        dbname='.$nombre_bd,$usuario,$password,
-        array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8")
+        dbname=' . $database,
+        $username,
+        $password,
+        array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")
     );
-} catch (Exception $e){
-    echo "Problema Con La Conexion:".$e->getMessage();
+} catch (Exception $e) {
+    echo "Error en la conexión: " . $e->getMessage();
 }
-?>
